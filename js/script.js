@@ -1,4 +1,35 @@
 (function() {
+  // Hamburger menu
+  var hamburger = document.getElementById('nav-hamburger');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var mobileOverlay = document.getElementById('mobile-menu-overlay');
+  var mobileCloseBtn = document.getElementById('mobile-menu-close');
+
+  function openMobileMenu() {
+    mobileMenu.classList.add('open');
+    mobileOverlay.classList.add('open');
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburger) hamburger.addEventListener('click', openMobileMenu);
+  if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
+  if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', closeMobileMenu);
+
+  // Close mobile menu when a nav item is clicked
+  document.querySelectorAll('.mobile-nav-links button').forEach(function(btn) {
+    btn.addEventListener('click', closeMobileMenu);
+  });
+
   // Nav scroll behavior
   var nav = document.querySelector('nav');
 
@@ -77,6 +108,21 @@
     dots.forEach(function(dot, i) {
       dot.addEventListener('click', function() { goToSlide(i); });
     });
+
+    // Touch/swipe support
+    var carousel = document.querySelector('.hero-carousel');
+    var touchStartX = 0;
+    if (carousel) {
+      carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      carousel.addEventListener('touchend', function(e) {
+        var diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) {
+          goToSlide(diff > 0 ? currentSlide + 1 : currentSlide - 1);
+        }
+      }, { passive: true });
+    }
   }
 
   // Scroll animation

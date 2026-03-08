@@ -30,7 +30,27 @@
   <div class="nav-right">
     <button id="nav-contact" class="nav-contact-btn" data-page="contact">Contact</button>
   </div>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Fermer">✕</button>
+  <div class="mobile-menu-logos">
+    <img src="assets/images/LOGO%20El%20Amira.svg" class="nav-logo" alt="El Amira">
+    <div class="nav-brand-divider"></div>
+    <img src="assets/images/Logo%20Dawag.svg" class="nav-logo" alt="Dawag">
+  </div>
+  <ul class="mobile-nav-links">
+    <li><button data-page="home">Accueil</button></li>
+    <li><button data-page="amira">El Amira</button></li>
+    <li><button data-page="dawag">Dawag</button></li>
+    <li><button data-page="contact" class="mobile-contact-btn">Contact</button></li>
+  </ul>
+</div>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
 <!-- ===== HOME PAGE ===== -->
 <div id="page-home" class="page active">
@@ -159,14 +179,14 @@
   </section>
 
   <!-- Galerie photos appétissantes -->
-  <section style="padding:80px 60px 40px;max-width:1300px;margin:0 auto;">
+  <section class="photo-gallery-section" style="padding:80px 60px 40px;max-width:1300px;margin:0 auto;">
     <p class="section-label">La pâte à l'œuvre</p>
     <h2 class="section-title">Salé ou Sucré,<br>une finesse incomparable</h2>
     <p class="section-desc" style="max-width:700px;">
       La pâte Fillo El Amira se distingue par sa légèreté et son croustillant. Elle enveloppe chaque garniture avec délicatesse, pour des créations aussi belles que savoureuses.
     </p>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;">
+    <div class="photo-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;">
       <!-- Photo salé -->
       <div style="border-radius:20px;overflow:hidden;position:relative;box-shadow:0 12px 40px rgba(0,0,0,0.15);cursor:pointer;" class="photo-hover">
         <img src="assets/images/Fillo salé.jpg" alt="Briwates salés pâte Fillo El Amira" style="width:100%;height:380px;object-fit:cover;transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
@@ -219,11 +239,11 @@
   </section>
 
   <!-- Utilisations -->
-  <section style="background:var(--dark);padding:80px 60px;position:relative;overflow:hidden;">
+  <section class="applications-section" style="background:var(--dark);padding:80px 60px;position:relative;overflow:hidden;">
     <div style="max-width:1100px;margin:0 auto;">
       <p class="section-label" style="text-align:center">Applications</p>
       <h2 class="section-title" style="text-align:center;color:white;margin-bottom:50px">Que préparer avec la Pâte Fillo El Amira ?</h2>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <div class="applications-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
         <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;text-align:center;transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--amira-gold)';this.style.background='rgba(245,196,50,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.04)'">
           <span style="font-size:40px;display:block;margin-bottom:16px;">🥐</span>
           <h3 style="font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:10px;">Briwates Salés</h3>
@@ -244,16 +264,16 @@
   </section>
 
   <!-- Reels Instagram -->
-  <section style="padding:80px 60px;max-width:1100px;margin:0 auto;">
+  <section class="instagram-section" style="padding:80px 60px;max-width:1100px;margin:0 auto;">
     <p class="section-label" style="text-align:center;">Vu sur Instagram</p>
     <h2 class="section-title" style="text-align:center;margin-bottom:60px;">El Amira en action</h2>
 
     <!-- Reel 1 : reel à gauche, texte à droite -->
-    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
-      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+    <div class="reel-row" style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div class="reel-col" style="flex:0 0 auto;max-width:340px;width:100%;">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTgEVMRAO9L/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
       </div>
-      <div style="flex:1;">
+      <div class="reel-text" style="flex:1;">
         <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Salé</span>
         <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Fatayer Kefta Fillo</h3>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Un plat rapide et délicieux, des fatayer croustillant à la viande hachée et au fromage à tartiner.</p>
@@ -261,23 +281,23 @@
     </div>
 
     <!-- Reel 2 : texte à gauche, reel à droite -->
-    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
-      <div style="flex:1;">
+    <div class="reel-row reel-row-reverse" style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div class="reel-text" style="flex:1;">
         <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Salé</span>
         <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Un classique de la cuisine algérienne</h3>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Pour accompagné vos soupes aux lentilles, rien de mieux que des briwates dorées et savoureuses avec la pâte fillo.</p>
       </div>
-      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+      <div class="reel-col" style="flex:0 0 auto;max-width:340px;width:100%;">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQr0zanALJa/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
       </div>
     </div>
 
     <!-- Reel 3 : reel à gauche, texte à droite -->
-    <div style="display:flex;align-items:center;gap:60px;">
-      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+    <div class="reel-row" style="display:flex;align-items:center;gap:60px;">
+      <div class="reel-col" style="flex:0 0 auto;max-width:340px;width:100%;">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPUKiXOAOxn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
       </div>
-      <div style="flex:1;">
+      <div class="reel-text" style="flex:1;">
         <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
         <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Les Sweets-Roll fillo et kataif</h3>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Combiner le croustillant de la pâte fillo et du kataif, pour une patisserie crunchy. Laissez libre cours à votre imagination, caramel, chocolat, crème pistache, c'est vous qui choisissez.</p>
@@ -326,7 +346,7 @@
     </div>
   </section>
 
-  <div style="text-align:center;padding:60px 20px;background:var(--cream)">
+  <div class="contact-cta" style="text-align:center;padding:60px 20px;background:var(--cream)">
     <p class="section-label">Une question ?</p>
     <h3 style="font-family:'Playfair Display',serif;font-size:32px;margin-bottom:16px">Contactez l'équipe El Amira</h3>
     <p style="color:var(--text-muted);margin-bottom:32px;font-size:16px">Commandes en gros, échantillons, informations produits…</p>
@@ -404,16 +424,16 @@
   </section>
 
   <!-- Reels Instagram -->
-  <section style="padding:80px 60px;max-width:1100px;margin:0 auto;">
+  <section class="instagram-section" style="padding:80px 60px;max-width:1100px;margin:0 auto;">
     <p class="section-label" style="text-align:center;">Vu sur Instagram</p>
     <h2 class="section-title" style="text-align:center;margin-bottom:60px;">Dawag en action</h2>
 
     <!-- Reel 1 : reel à gauche, texte à droite -->
-    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
-      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+    <div class="reel-row" style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div class="reel-col" style="flex:0 0 auto;max-width:340px;width:100%;">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQFE6uIAA8G/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
       </div>
-      <div style="flex:1;">
+      <div class="reel-text" style="flex:1;">
         <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
         <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Les mini-قطايف (Kataif)</h3>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Découvrez la méthode la plus simple pour réaliser des mini-Ktayef aux noix et pistaches. Une recette généreuse, parfumée à l'eau de fleur d'oranger et dorée au smen</p>
@@ -421,23 +441,23 @@
     </div>
 
     <!-- Reel 2 : texte à gauche, reel à droite -->
-    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
-      <div style="flex:1;">
+    <div class="reel-row reel-row-reverse" style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div class="reel-text" style="flex:1;">
         <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
         <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Le Cheesecake Kataif</h3>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Le croquant inimitable du Kataif dorée au beurre avec l'onctuosité d'un cheesecake au mascarpone, le tout nappé d'un caramel au beurre salé maison</p>
       </div>
-      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+      <div class="reel-col" style="flex:0 0 auto;max-width:340px;width:100%;">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DO30Y0zALJ0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
       </div>
     </div>
 
     <!-- Reel 3 : reel à gauche, texte à droite -->
-    <div style="display:flex;align-items:center;gap:60px;">
-      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+    <div class="reel-row" style="display:flex;align-items:center;gap:60px;">
+      <div class="reel-col" style="flex:0 0 auto;max-width:340px;width:100%;">
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DVBDuqxAHTw/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
       </div>
-      <div style="flex:1;">
+      <div class="reel-text" style="flex:1;">
         <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
         <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Tahliya Kataif</h3>
         <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Une base de Kounafa torréfiée au beurre, une crème légère au fromage frais et un topping de sucre florentin caramélisé.</p>
@@ -486,7 +506,7 @@
     </div>
   </section>
 
-  <div style="text-align:center;padding:60px 20px;background:var(--cream)">
+  <div class="contact-cta" style="text-align:center;padding:60px 20px;background:var(--cream)">
     <p class="section-label" style="color:var(--dawag-gold)">Une question ?</p>
     <h3 style="font-family:'Playfair Display',serif;font-size:32px;margin-bottom:16px">Contactez l'équipe Dawag</h3>
     <p style="color:var(--text-muted);margin-bottom:32px;font-size:16px">Commandes en gros, échantillons, informations produits…</p>

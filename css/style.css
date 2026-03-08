@@ -538,7 +538,7 @@
   .amira-hero .product-hero-pattern {
     opacity: 1;
     background-image: url('../assets/images/Background.svg');
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -546,7 +546,7 @@
   .dawag-hero .product-hero-pattern {
     opacity: 0.2;
     background-image: url('../assets/images/Background.svg');
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -822,7 +822,7 @@
     position: absolute;
     inset: 0;
     background-image: url('../assets/images/Background.svg');
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -1422,7 +1422,8 @@ nav.scrolled .nav-hamburger span { background: var(--dark); }
   .instagram-section { padding: 60px 20px !important; }
   .reel-row { flex-direction: column !important; gap: 28px !important; margin-bottom: 56px !important; }
   .reel-row-reverse { flex-direction: column !important; }
-  .reel-col { max-width: 100% !important; width: 100% !important; }
+  .reel-col { max-width: 100% !important; width: 100% !important; order: 2; }
+  .reel-text { order: 1; }
   .reel-text h3 { font-size: 22px !important; }
 
   /* Contact CTA */

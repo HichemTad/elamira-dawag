@@ -21,9 +21,27 @@
     document.body.style.overflow = '';
   }
 
-  if (hamburger) hamburger.addEventListener('click', openMobileMenu);
-  if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
-  if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', closeMobileMenu);
+  if (hamburger) {
+    hamburger.addEventListener('click', openMobileMenu);
+    hamburger.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      openMobileMenu();
+    }, { passive: false });
+  }
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    mobileOverlay.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      closeMobileMenu();
+    }, { passive: false });
+  }
+  if (mobileCloseBtn) {
+    mobileCloseBtn.addEventListener('click', closeMobileMenu);
+    mobileCloseBtn.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      closeMobileMenu();
+    }, { passive: false });
+  }
 
   // Close mobile menu when a nav item is clicked
   document.querySelectorAll('.mobile-nav-links button').forEach(function(btn) {

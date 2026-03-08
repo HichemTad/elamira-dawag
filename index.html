@@ -1,0 +1,641 @@
+﻿<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Amira & Dawag — Pâtes Artisanales d'Exception</title>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Merienda:wght@400;700;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+</style>
+<script async src="https://www.instagram.com/embed.js"></script>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-brand" data-page="home">
+    <div class="nav-brand-logos">
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="nav-logo" alt="El Amira">
+      <div class="nav-brand-divider"></div>
+      <img src="assets/images/Logo%20Dawag.svg" class="nav-logo" alt="Dawag">
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><button id="nav-home" data-page="home">Accueil</button></li>
+    <li><button id="nav-amira" data-page="amira">El Amira</button></li>
+    <li><button id="nav-dawag" data-page="dawag">Dawag</button></li>
+  </ul>
+  <div class="nav-right">
+    <button id="nav-contact" class="nav-contact-btn" data-page="contact">Contact</button>
+  </div>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page active">
+
+  <!-- Hero Carousel -->
+  <section class="hero-carousel">
+
+    <!-- Slide 1 : El Amira -->
+    <div class="hero-slide amira-slide active">
+      <div class="hero-pattern"></div>
+      <div class="hero-slide-inner amira-slide-inner">
+        <img src="assets/images/LOGO%20El%20Amira.svg" class="hero-logo animate-in" alt="El Amira">
+        <img src="assets/images/Fillo%20package.png" alt="Emballage Pâte Fillo El Amira 500g" class="hero-package-img" data-page="amira" style="cursor:pointer;">
+      </div>
+    </div>
+
+    <!-- Slide 2 : Dawag -->
+    <div class="hero-slide dawag-slide">
+      <div class="hero-pattern"></div>
+      <div class="hero-slide-inner dawag-slide-inner">
+        <img src="assets/images/Logo%20Dawag.svg" class="hero-logo animate-in" alt="Dawag">
+        <img src="assets/images/Dawag%20package.png" alt="Emballage Dawag" class="hero-package-img" data-page="dawag" style="cursor:pointer;">
+      </div>
+    </div>
+
+    <!-- Flèches -->
+    <button class="carousel-arrow carousel-prev" aria-label="Précédent">&#8249;</button>
+    <button class="carousel-arrow carousel-next" aria-label="Suivant">&#8250;</button>
+
+    <!-- Points de navigation -->
+    <div class="carousel-dots">
+      <button class="carousel-dot active" data-slide="0" aria-label="El Amira"></button>
+      <button class="carousel-dot" data-slide="1" aria-label="Dawag"></button>
+    </div>
+
+  </section>
+
+  <!-- Intro -->
+  <section class="intro-section">
+    <p class="section-label">Notre Histoire</p>
+    <h2 class="section-title">Deux marques,<br>un même engagement</h2>
+    <p class="section-desc">
+      Derrière El Amira et Dawag, une seule passion : offrir aux artisans pâtissiers et aux professionnels de la restauration des pâtes d'une qualité irréprochable, fidèles aux traditions orientales.
+    </p>
+  </section>
+
+  <!-- Brands Cards -->
+  <div class="brands-grid">
+    <div class="brand-card amira-card" data-page="amira">
+      <div class="brand-card-pattern"></div>
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="brand-card-logo" alt="El Amira">
+      <h3 class="brand-card-name">El Amira</h3>
+      <p class="brand-card-sub">الأميرة — La Princesse</p>
+      <p class="brand-card-desc">
+        Pâte Fillo ultra-fine pour briwates croustillants, bastillas raffinées et feuilletés orientaux sucrés ou salés.
+      </p>
+      <span class="brand-card-link">Voir les produits →</span>
+    </div>
+    <div class="brand-card dawag-card" data-page="dawag">
+      <div class="brand-card-pattern"></div>
+      <img src="assets/images/Logo%20Dawag.svg" class="brand-card-logo" alt="Dawag">
+      <h3 class="brand-card-name">Dawag</h3>
+      <p class="brand-card-sub">رواق — La Galerie</p>
+      <p class="brand-card-desc">
+        Pâtes à Knafeh et Kataif préparées selon des recettes ancestrales, avec un grammage parfait et une texture garantissant la meilleure cuisson.
+      </p>
+      <span class="brand-card-link">Voir les produits →</span>
+    </div>
+  </div>
+
+  <!-- Values -->
+  <section class="values-section">
+    <div class="values-inner">
+      <p class="section-label" style="text-align:center">Nos engagements</p>
+      <h2 class="section-title" style="text-align:center;color:white">Ce qui nous distingue</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <span class="value-icon">🌿</span>
+          <h3 class="value-name">Ingrédients Sélectionnés</h3>
+          <p class="value-desc">Nous sélectionnons rigoureusement nos matières premières pour une qualité constante, du blé à la farine.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🏺</span>
+          <h3 class="value-name">Savoir-faire Traditionnel</h3>
+          <p class="value-desc">Nos recettes respectent les méthodes ancestrales de fabrication des pâtes orientales, transmises de génération en génération.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🚚</span>
+          <h3 class="value-name">Livraison Fiable</h3>
+          <p class="value-desc">Un réseau logistique solide pour que vos commandes arrivent fraîches et dans les délais convenus, partout en Algérie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logos">
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="footer-logo" alt="El Amira">
+      <div class="footer-sep"></div>
+      <img src="assets/images/Logo%20Dawag.svg" class="footer-logo" alt="Dawag">
+    </div>
+    <p class="footer-text">El Amira & Dawag — Pâtes Artisanales d'Exception</p>
+    <p class="footer-copy">© 2025 — Tous droits réservés</p>
+  </footer>
+</div>
+
+<!-- ===== EL AMIRA PAGE ===== -->
+<div id="page-amira" class="page">
+
+
+  <!-- Hero avec emballage en arrière-plan -->
+  <section class="product-hero amira-hero" style="min-height:65vh;position:relative;">
+    <div class="product-hero-pattern"></div>
+    <div class="product-hero-content animate-in" style="position:relative;z-index:2;">
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="product-hero-logo" alt="El Amira">
+      <h1 class="product-hero-title">Pâte Fillo</h1>
+      <p class="product-hero-arabic">ورقة الفيلو</p>
+      <div class="gold-divider"></div>
+      <p class="product-hero-tagline">La pâte Fillo fine qui sublime chaque création</p>
+      <div style="display:flex;gap:16px;justify-content:center;margin-top:32px;flex-wrap:wrap;">
+        <span style="padding:8px 20px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);border-radius:100px;color:white;font-size:13px;font-weight:600;">🥐 Briwates Salés</span>
+        <span style="padding:8px 20px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);border-radius:100px;color:white;font-size:13px;font-weight:600;">🍯 Feuilletés Sucrés</span>
+        <span style="padding:8px 20px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.4);border-radius:100px;color:white;font-size:13px;font-weight:600;">🌿 Pastillas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie photos appétissantes -->
+  <section style="padding:80px 60px 40px;max-width:1300px;margin:0 auto;">
+    <p class="section-label">La pâte à l'œuvre</p>
+    <h2 class="section-title">Salé ou Sucré,<br>une finesse incomparable</h2>
+    <p class="section-desc" style="max-width:700px;">
+      La pâte Fillo El Amira se distingue par sa légèreté et son croustillant. Elle enveloppe chaque garniture avec délicatesse, pour des créations aussi belles que savoureuses.
+    </p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;">
+      <!-- Photo salé -->
+      <div style="border-radius:20px;overflow:hidden;position:relative;box-shadow:0 12px 40px rgba(0,0,0,0.15);cursor:pointer;" class="photo-hover">
+        <img src="assets/images/Fillo salé.jpg" alt="Briwates salés pâte Fillo El Amira" style="width:100%;height:380px;object-fit:cover;transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(26,10,10,0.85));padding:28px 24px;">
+          <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;">Salée</span>
+          <h3 style="font-family:'Montserrat',sans-serif;font-size:22px;color:white;margin-bottom:4px;">Briwates & Feuilletés</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.7);">Fromage, épinards, viande hachée, légumes…</p>
+        </div>
+      </div>
+      <!-- Photo sucré -->
+      <div style="border-radius:20px;overflow:hidden;position:relative;box-shadow:0 12px 40px rgba(0,0,0,0.15);">
+        <img src="assets/images/Fillo Sucré.jpg" alt="Baklawa sucrée pâte Fillo El Amira" style="width:100%;height:380px;object-fit:cover;transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(26,10,10,0.85));padding:28px 24px;">
+          <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:8px;text-transform:uppercase;letter-spacing:1px;">Sucrée</span>
+          <h3 style="font-family:'Montserrat',sans-serif;font-size:22px;color:white;margin-bottom:4px;">Baklawa & Pâtisseries</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.7);">Pistaches, miel, noix, amandes…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produits -->
+  <section class="products-section" style="padding-top:40px;">
+    <p class="section-label">Gamme El Amira</p>
+    <h2 class="section-title">Pâte Fillo — ورقة الفيلو</h2>
+    <p class="section-desc">
+      Une formule de qualité pour répondre aux besoins des familles comme des grandes enseignes de pâtisseries.
+    </p>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-visual amira-visual" style="background:linear-gradient(135deg,#FFF5F5,#FFE0E0);position:relative;overflow:hidden;">
+          <img src="assets/images/Produit%20Fillo.jpg" alt="Pâte Fillo El Amira 500g" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+          <span style="position:absolute;bottom:16px;left:16px;background:rgba(232,0,28,0.9);padding:3px 10px;border-radius:100px;color:white;font-size:12px;font-weight:700;line-height:1.6;">500g</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Pâte Fillo </h3>
+          <p class="product-arabic">ورقة الفيلو </p>
+          <p class="product-desc">Feuilles ultra-fines et souples pour des briwates croustillants, pastillas et feuilletés salés ou sucrés. Dorure parfaite garantie à la cuisson.</p>
+          <div class="product-tags">
+            <span class="product-tag amira-tag">Ultra-fine</span>
+            <span class="product-tag amira-tag">500g</span>
+            <span class="product-tag amira-tag">Réfrigérée</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Utilisations -->
+  <section style="background:var(--dark);padding:80px 60px;position:relative;overflow:hidden;">
+    <div style="max-width:1100px;margin:0 auto;">
+      <p class="section-label" style="text-align:center">Applications</p>
+      <h2 class="section-title" style="text-align:center;color:white;margin-bottom:50px">Que préparer avec la Pâte Fillo El Amira ?</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;text-align:center;transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--amira-gold)';this.style.background='rgba(245,196,50,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.04)'">
+          <span style="font-size:40px;display:block;margin-bottom:16px;">🥐</span>
+          <h3 style="font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:10px;">Briwates Salés</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;">Fromage, kefta, crevettes, légumes… Croustillant parfait à chaque bouchée.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;text-align:center;transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--amira-gold)';this.style.background='rgba(245,196,50,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.04)'">
+          <span style="font-size:40px;display:block;margin-bottom:16px;">🍯</span>
+          <h3 style="font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:10px;">Baklawa & Sucreries</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;">Pistaches, amandes, miel… Des feuilletés sucrés craquants et fondants.</p>
+        </div>
+        <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;text-align:center;transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--amira-gold)';this.style.background='rgba(245,196,50,0.06)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.08)';this.style.background='rgba(255,255,255,0.04)'">
+          <span style="font-size:40px;display:block;margin-bottom:16px;">🌿</span>
+          <h3 style="font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:10px;">Pastillas</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6;">Poulet, fruits de mer, amandes… La pastilla algérienne dans toute sa splendeur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reels Instagram -->
+  <section style="padding:80px 60px;max-width:1100px;margin:0 auto;">
+    <p class="section-label" style="text-align:center;">Vu sur Instagram</p>
+    <h2 class="section-title" style="text-align:center;margin-bottom:60px;">El Amira en action</h2>
+
+    <!-- Reel 1 : reel à gauche, texte à droite -->
+    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DTgEVMRAO9L/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
+      </div>
+      <div style="flex:1;">
+        <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Salé</span>
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Fatayer Kefta Fillo</h3>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Un plat rapide et délicieux, des fatayer croustillant à la viande hachée et au fromage à tartiner.</p>
+      </div>
+    </div>
+
+    <!-- Reel 2 : texte à gauche, reel à droite -->
+    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div style="flex:1;">
+        <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Salé</span>
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Un classique de la cuisine algérienne</h3>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Pour accompagné vos soupes aux lentilles, rien de mieux que des briwates dorées et savoureuses avec la pâte fillo.</p>
+      </div>
+      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQr0zanALJa/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
+      </div>
+    </div>
+
+    <!-- Reel 3 : reel à gauche, texte à droite -->
+    <div style="display:flex;align-items:center;gap:60px;">
+      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPUKiXOAOxn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
+      </div>
+      <div style="flex:1;">
+        <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Les Sweets-Roll fillo et kataif</h3>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Combiner le croustillant de la pâte fillo et du kataif, pour une patisserie crunchy. Laissez libre cours à votre imagination, caramel, chocolat, crème pistache, c'est vous qui choisissez.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="specs-section">
+    <div class="specs-inner">
+      <p class="section-label" style="color:var(--amira-red)">Caractéristiques</p>
+      <h2 class="section-title">Informations Produit</h2>
+      <div class="specs-grid">
+        <div class="spec-item amira-spec">
+          <span class="spec-icon">🏭</span>
+          <p class="spec-label">Fabrication</p>
+          <p class="spec-value">Semi-Industrielle</p>
+        </div>
+        <div class="spec-item amira-spec">
+          <span class="spec-icon">❄️</span>
+          <p class="spec-label">Conservation</p>
+          <p class="spec-value">Réfrigérée / Surgelée</p>
+        </div>
+        <div class="spec-item amira-spec">
+          <span class="spec-icon">📦</span>
+          <p class="spec-label">Conditionnements</p>
+          <p class="spec-value">500g</p>
+        </div>
+        <div class="spec-item amira-spec">
+          <span class="spec-icon">📐</span>
+          <p class="spec-label">Format Feuilles</p>
+          <p class="spec-value">30×40cm — 40×60cm</p>
+        </div>
+        <div class="spec-item amira-spec">
+          <span class="spec-icon">🚚</span>
+          <p class="spec-label">Livraison</p>
+          <p class="spec-value">Chaîne du froid garantie</p>
+        </div>
+        <div class="spec-item amira-spec">
+          <span class="spec-icon">✅</span>
+          <p class="spec-label">Certification</p>
+          <p class="spec-value">Halal — Normes Algériennes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align:center;padding:60px 20px;background:var(--cream)">
+    <p class="section-label">Une question ?</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:32px;margin-bottom:16px">Contactez l'équipe El Amira</h3>
+    <p style="color:var(--text-muted);margin-bottom:32px;font-size:16px">Commandes en gros, échantillons, informations produits…</p>
+    <button class="cta-contact" style="padding:16px 40px;background:var(--amira-red);color:white;border:none;border-radius:100px;font-family:'Tajawal',sans-serif;font-size:16px;font-weight:700;cursor:pointer;transition:all 0.3s ease" data-page="contact">Nous contacter →</button>
+  </div>
+
+  <footer>
+    <div class="footer-logos">
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="footer-logo" alt="El Amira">
+      <div class="footer-sep"></div>
+      <img src="assets/images/Logo%20Dawag.svg" class="footer-logo" alt="Dawag">
+    </div>
+    <p class="footer-text">El Amira & Dawag — Pâtes Artisanales d'Exception</p>
+    <p class="footer-copy">© 2025 — Tous droits réservés</p>
+  </footer>
+</div>
+
+<!-- ===== DAWAG PAGE ===== -->
+<div id="page-dawag" class="page">
+
+
+  <section class="product-hero dawag-hero">
+    <div class="product-hero-pattern"></div>
+    <div class="product-hero-content animate-in">
+      <img src="assets/images/Logo%20Dawag.svg" class="product-hero-logo" alt="Dawag">
+      <h1 class="product-hero-title">Kataif - Kunafa</h1>
+      <p class="product-hero-arabic">كنافة - قطايف</p>
+      <div class="gold-divider"></div>
+      <p class="product-hero-tagline">La pâte Kataif & Kunafa authentique</p>
+    </div>
+  </section>
+
+  <section class="products-section">
+    <p class="section-label" style="color:var(--dawag-gold)">Les produits Dawag</p>
+    <h2 class="section-title">Pâtes à Kunafa & Kataif</h2>
+    <p class="section-desc" style="max-width:700px">
+      Les pâtes Dawag sont élaborées pour offrir la texture idéale à vos pâtisseries
+    </p>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-visual dawag-visual" style="position:relative;overflow:hidden;">
+          <img src="assets/images/Produit dawag.jpg" alt="Pâte à Knafeh Fine Dawag" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Pâte Kataif Kunafa</h3>
+          <p class="product-arabic">عجينة قطايف كنافة </p>
+          <p class="product-desc">Pâte cheveux d'ange ultra-fine, parfaite pour la Knafeh au fromage ou à la crème. Cuisson homogène et dorure impeccable garanties.</p>
+          <div class="product-tags">
+            <span class="product-tag dawag-tag">Fine</span>
+            <span class="product-tag dawag-tag">500g</span>
+            <span class="product-tag dawag-tag">Réfrigérée</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-visual dawag-visual">
+          <div class="product-visual-ornament">🌙</div>
+          <span class="product-visual-icon">🥞</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Kataif Grillé</h3>
+          <p class="product-arabic">قطايف مشوية</p>
+          <p class="product-desc">Disques de pâte moelleuse dorés à la perfection, prêts à garnir. Texture aérée et légère garantissant une cuisson homogène pour des créations orientales authentiques.</p>
+          <div class="product-tags">
+            <span class="product-tag dawag-tag">Kataif</span>
+            <span class="product-tag dawag-tag">Grillé</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reels Instagram -->
+  <section style="padding:80px 60px;max-width:1100px;margin:0 auto;">
+    <p class="section-label" style="text-align:center;">Vu sur Instagram</p>
+    <h2 class="section-title" style="text-align:center;margin-bottom:60px;">Dawag en action</h2>
+
+    <!-- Reel 1 : reel à gauche, texte à droite -->
+    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DQFE6uIAA8G/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
+      </div>
+      <div style="flex:1;">
+        <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Les mini-قطايف (Kataif)</h3>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Découvrez la méthode la plus simple pour réaliser des mini-Ktayef aux noix et pistaches. Une recette généreuse, parfumée à l'eau de fleur d'oranger et dorée au smen</p>
+      </div>
+    </div>
+
+    <!-- Reel 2 : texte à gauche, reel à droite -->
+    <div style="display:flex;align-items:center;gap:60px;margin-bottom:80px;">
+      <div style="flex:1;">
+        <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Le Cheesecake Kataif</h3>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Le croquant inimitable du Kataif dorée au beurre avec l'onctuosité d'un cheesecake au mascarpone, le tout nappé d'un caramel au beurre salé maison</p>
+      </div>
+      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DO30Y0zALJ0/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
+      </div>
+    </div>
+
+    <!-- Reel 3 : reel à gauche, texte à droite -->
+    <div style="display:flex;align-items:center;gap:60px;">
+      <div style="flex:0 0 auto;max-width:340px;width:100%;">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DVBDuqxAHTw/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.12);margin:0;max-width:340px;min-width:0;padding:0;width:100%;"></blockquote>
+      </div>
+      <div style="flex:1;">
+        <span style="display:inline-block;background:#ED1B24;color:white;font-size:12px;font-weight:700;padding:3px 12px;border-radius:100px;margin-bottom:16px;text-transform:uppercase;letter-spacing:1px;">Sucré</span>
+        <h3 style="font-family:'Montserrat',sans-serif;font-size:28px;color:var(--dark);margin-bottom:12px;">Tahliya Kataif</h3>
+        <p style="font-size:15px;color:var(--text-muted);line-height:1.7;">Une base de Kounafa torréfiée au beurre, une crème légère au fromage frais et un topping de sucre florentin caramélisé.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="specs-section">
+    <div class="specs-inner">
+      <p class="section-label" style="color:var(--dawag-burgundy)">Caractéristiques</p>
+      <h2 class="section-title">Informations Produit</h2>
+      <div class="specs-grid">
+        <div class="spec-item dawag-spec">
+          <span class="spec-icon">🏭</span>
+          <p class="spec-label">Fabrication</p>
+          <p class="spec-value">Artisanale & Industrielle</p>
+        </div>
+        <div class="spec-item dawag-spec">
+          <span class="spec-icon">❄️</span>
+          <p class="spec-label">Conservation</p>
+          <p class="spec-value">Surgelée / Réfrigérée</p>
+        </div>
+        <div class="spec-item dawag-spec">
+          <span class="spec-icon">📦</span>
+          <p class="spec-label">Conditionnements</p>
+          <p class="spec-value">500g</p>
+        </div>
+        <div class="spec-item dawag-spec">
+          <span class="spec-icon">🌾</span>
+          <p class="spec-label">Ingrédients</p>
+          <p class="spec-value">Farine de blé sélectionnée</p>
+        </div>
+        <div class="spec-item dawag-spec">
+          <span class="spec-icon">🚚</span>
+          <p class="spec-label">Livraison</p>
+          <p class="spec-value">Transport frigorifique</p>
+        </div>
+        <div class="spec-item dawag-spec">
+          <span class="spec-icon">✅</span>
+          <p class="spec-label">Certification</p>
+          <p class="spec-value">Halal — Normes Algériennes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align:center;padding:60px 20px;background:var(--cream)">
+    <p class="section-label" style="color:var(--dawag-gold)">Une question ?</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:32px;margin-bottom:16px">Contactez l'équipe Dawag</h3>
+    <p style="color:var(--text-muted);margin-bottom:32px;font-size:16px">Commandes en gros, échantillons, informations produits…</p>
+    <button class="cta-contact" style="padding:16px 40px;background:var(--dawag-burgundy);color:white;border:none;border-radius:100px;font-family:'Tajawal',sans-serif;font-size:16px;font-weight:700;cursor:pointer;transition:all 0.3s ease" data-page="contact">Nous contacter →</button>
+  </div>
+
+  <footer>
+    <div class="footer-logos">
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="footer-logo" alt="El Amira">
+      <div class="footer-sep"></div>
+      <img src="assets/images/Logo%20Dawag.svg" class="footer-logo" alt="Dawag">
+    </div>
+    <p class="footer-text">El Amira & Dawag — Pâtes Artisanales d'Exception</p>
+    <p class="footer-copy">© 2025 — Tous droits réservés</p>
+  </footer>
+</div>
+
+<!-- ===== CONTACT PAGE ===== -->
+<div id="page-contact" class="page">
+
+
+  <section class="contact-hero">
+    <div class="contact-hero-content animate-in">
+      <p class="section-label">Parlons-en</p>
+      <h1 class="section-title">Contactez-nous</h1>
+      <p style="color:rgba(255,255,255,0.6);font-size:17px;max-width:500px;margin:12px auto 0;line-height:1.7">
+        Commandes en gros, informations produits, partenariats — notre équipe est à votre disposition.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+      <div class="contact-brands">
+
+        <div class="contact-brand-card amira-cb">
+          <div class="brand-card-pattern"></div>
+          <img src="assets/images/LOGO%20El%20Amira.svg" class="contact-brand-logo" alt="El Amira">
+          <h3 class="contact-brand-name">El Amira</h3>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <span class="contact-info-icon">📞</span>
+              <span>+213 6XX XX XX XX</span>
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-info-icon">📧</span>
+              <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8aba7a6bca9abbc88ada4a9a5a1baa9e6a5a9">el-amira@outlook.com</a></span>
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-info-icon">📍</span>
+              <span>Zone Industrielle — Oran, Algérie</span>
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-info-icon">🕐</span>
+              <span>Sam – Jeu : 8h – 18h</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-brand-card dawag-cb">
+          <div class="brand-card-pattern"></div>
+          <img src="assets/images/Logo%20Dawag.svg" class="contact-brand-logo" alt="Dawag">
+          <h3 class="contact-brand-name">Dawag</h3>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <span class="contact-info-icon">📞</span>
+              <span>+213 6XX XX XX XX</span>
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-info-icon">📍</span>
+              <span>Zone Industrielle — Oran, Algérie</span>
+            </li>
+            <li class="contact-info-item">
+              <span class="contact-info-icon">🕐</span>
+              <span>Sam – Jeu : 8h – 18h</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="contact-form-wrapper">
+        <h2 class="form-title">Envoyez-nous un message</h2>
+        <p class="form-subtitle">Réponse garantie sous 24 heures ouvrables.</p>
+
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Prénom & Nom</label>
+              <input type="text" name="nom" placeholder="Adnan Saidi">
+            </div>
+            <div class="form-group">
+              <label>Téléphone</label>
+              <input type="tel" name="telephone" placeholder="+212 6XX XX XX XX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="votre@email.com">
+          </div>
+
+          <div class="form-group">
+            <label>Marque concernée</label>
+            <select name="marque">
+              <option value="">-- Choisir --</option>
+              <option>El Amira — Pâte Fillo</option>
+              <option>Dawag — Pâte Knafeh / Kataif</option>
+              <option>Les deux marques</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Sujet</label>
+            <select name="sujet">
+              <option value="">-- Type de demande --</option>
+              <option>Commande en gros</option>
+              <option>Demande d'échantillons</option>
+              <option>Informations produits</option>
+              <option>Partenariat / Distribution</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Décrivez votre demande, les quantités souhaitées, votre zone géographique…"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submit-btn">Envoyer la demande →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logos">
+      <img src="assets/images/LOGO%20El%20Amira.svg" class="footer-logo" alt="El Amira">
+      <div class="footer-sep"></div>
+      <img src="assets/images/Logo%20Dawag.svg" class="footer-logo" alt="Dawag">
+    </div>
+    <p class="footer-text">El Amira & Dawag — Pâtes Artisanales d'Exception</p>
+    <p class="footer-copy">© 2025 — Tous droits réservés</p>
+  </footer>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">✅ Message envoyé ! Nous vous répondrons sous 24h.</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

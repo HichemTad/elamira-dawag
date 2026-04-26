@@ -1438,30 +1438,77 @@
 
   /* Mobile lang switcher */
   .mobile-lang-switcher {
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 16px;
     display: flex;
-    gap: 8px;
-    margin-top: 24px;
-    padding: 0 24px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .mobile-lang-switcher-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    padding: 0 16px 8px;
   }
 
   .mobile-lang-option {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 100px;
-    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 16px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
-    color: white;
+    color: var(--dark);
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: background 0.15s ease;
+    text-align: left;
+    width: 100%;
   }
 
-  .mobile-lang-option:hover,
+  .mobile-lang-option .lang-flag-text {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .mobile-lang-option .lang-name {
+    flex: 1;
+  }
+
+  .mobile-lang-option .lang-check {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: transparent;
+    transition: all 0.15s ease;
+  }
+
+  .mobile-lang-option:hover {
+    background: var(--cream);
+  }
+
   .mobile-lang-option.active {
+    background: rgba(232,0,28,0.06);
+    color: var(--amira-red);
+  }
+
+  .mobile-lang-option.active .lang-check {
     background: var(--amira-red);
     border-color: var(--amira-red);
+    color: white;
+    font-size: 11px;
   }
 
   /* RTL adjustments */

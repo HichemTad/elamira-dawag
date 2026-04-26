@@ -309,6 +309,28 @@
     text-align: center;
   }
 
+  .video-section {
+    padding: 80px 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .video-wrapper {
+    margin-top: 40px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  }
+
+  .video-wrapper video {
+    width: 100%;
+    display: block;
+    max-height: 620px;
+    object-fit: cover;
+    background: #000;
+  }
+
   .section-label {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -1121,6 +1143,7 @@
     .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     .products-section, .specs-section, .contact-section { padding: 60px 24px; }
     .intro-section { padding: 60px 24px; }
+    .video-section { padding: 60px 24px; }
     .values-section { padding: 60px 24px; }
     .specs-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }

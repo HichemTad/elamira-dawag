@@ -87,7 +87,7 @@ var TRANSLATIONS = {
     'dawag.product1Desc': "Pâte cheveux d'ange ultra-fine, parfaite pour la Knafeh au fromage ou à la crème. Cuisson homogène et dorure impeccable garanties.",
     'dawag.product1Tag1': 'Fine',
     'dawag.product2Name': 'Kataif Grillé',
-    'dawag.product2Desc': "Disques de pâte moelleuse dorés à la perfection, prêts à garnir. Texture aérée et légère garantissant une cuisson homogène pour des créations orientales authentiques.",
+    'dawag.product2Desc': "Pâte cheveux d'ange dorée à la perfection, prête à garnir. Texture aérée et légère garantissant une cuisson homogène pour des créations orientales authentiques.",
     'dawag.product2Tag1': 'Kataif',
     'dawag.product2Tag2': 'Grillé',
     'dawag.igLabel': 'Vu sur Instagram',

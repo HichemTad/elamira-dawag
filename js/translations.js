@@ -1,6 +1,8 @@
 var TRANSLATIONS = {
   fr: {
     'nav.home': 'Accueil',
+    'nav.amira': 'El Amira',
+    'nav.dawag': 'Dawag',
     'nav.contact': 'Contact',
     'home.ourStory': 'Notre Histoire',
     'home.heroTitle': 'Deux marques,<br>un même engagement',
@@ -134,6 +136,8 @@ var TRANSLATIONS = {
 
   en: {
     'nav.home': 'Home',
+    'nav.amira': 'El Amira',
+    'nav.dawag': 'Dawag',
     'nav.contact': 'Contact',
     'home.ourStory': 'Our Story',
     'home.heroTitle': 'Two brands,<br>one commitment',
@@ -267,6 +271,8 @@ var TRANSLATIONS = {
 
   ar: {
     'nav.home': 'الرئيسية',
+    'nav.amira': 'الأميرة',
+    'nav.dawag': 'داواق',
     'nav.contact': 'اتصل بنا',
     'home.ourStory': 'قصتنا',
     'home.heroTitle': 'علامتان تجاريتان،<br>التزام واحد',

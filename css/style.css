@@ -310,6 +310,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin: 60px 0;
   }
 
   .intro-bg-video {

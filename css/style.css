@@ -305,7 +305,7 @@
   .intro-video-section {
     position: relative;
     width: 100%;
-    min-height: 600px;
+    height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,38 +337,39 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    padding: 100px 60px;
+    padding: 40px 60px;
     max-width: 820px;
   }
 
   .intro-label {
     color: var(--amira-gold);
     letter-spacing: 5px;
+    margin-bottom: 10px;
   }
 
   .intro-video-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(36px, 5vw, 62px);
+    font-size: clamp(24px, 3.5vw, 42px);
     font-weight: 700;
     line-height: 1.15;
     color: #fff;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
     text-shadow: 0 2px 20px rgba(0,0,0,0.4);
   }
 
   .intro-gold-line {
-    width: 60px;
-    height: 3px;
+    width: 48px;
+    height: 2px;
     background: var(--amira-gold);
-    margin: 0 auto 28px;
+    margin: 0 auto 16px;
     border-radius: 2px;
   }
 
   .intro-video-desc {
-    font-size: 17px;
-    line-height: 1.85;
-    color: rgba(255, 255, 255, 0.85);
-    max-width: 660px;
+    font-size: 15px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 640px;
     margin: 0 auto;
     font-weight: 300;
   }
@@ -1184,8 +1185,8 @@
     .values-grid { grid-template-columns: 1fr; }
     .contact-grid { grid-template-columns: 1fr; gap: 40px; }
     .products-section, .specs-section, .contact-section { padding: 60px 24px; }
-    .intro-video-content { padding: 80px 24px; }
-    .intro-video-section { min-height: 500px; }
+    .intro-video-content { padding: 32px 24px; }
+    .intro-video-section { height: 320px; }
     .values-section { padding: 60px 24px; }
     .specs-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }

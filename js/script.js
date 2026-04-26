@@ -1,4 +1,44 @@
 (function() {
+
+  // ===== LANGUAGE SWITCHER =====
+  var langToggle = document.getElementById('lang-toggle');
+  var langDrawer = document.getElementById('lang-drawer');
+
+  function closeLangDrawer() {
+    if (langDrawer) langDrawer.classList.remove('open');
+  }
+
+  if (langToggle) {
+    langToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langDrawer.classList.toggle('open');
+    });
+  }
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('#lang-switcher')) closeLangDrawer();
+  });
+
+  // Desktop lang options
+  document.querySelectorAll('.lang-option').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      applyLanguage(btn.getAttribute('data-lang'));
+      closeLangDrawer();
+    });
+  });
+
+  // Mobile lang options
+  document.querySelectorAll('.mobile-lang-option').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      applyLanguage(btn.getAttribute('data-lang'));
+    });
+  });
+
+  // Init language from localStorage
+  var savedLang = localStorage.getItem('lang') || 'fr';
+  applyLanguage(savedLang);
+
+
   // Hamburger menu
   var hamburger = document.getElementById('nav-hamburger');
   var mobileMenu = document.getElementById('mobile-menu');
